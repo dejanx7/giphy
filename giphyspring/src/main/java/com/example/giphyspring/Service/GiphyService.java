@@ -28,7 +28,7 @@ public class GiphyService {
         String gifUrl = UriComponentsBuilder.fromUriString(giphyUrl)
                 .queryParam("q", gifName)
                 .queryParam("api_key", giphyApiKey)
-                .queryParam("limit", 2)
+                .queryParam("limit", limit)
                 .queryParam("offset", offset)
                 .toUriString();
 
