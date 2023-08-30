@@ -3,7 +3,7 @@ import { Inject, Injectable } from '@angular/core';
 import { Gif } from '../model/gif';
 import { Observable } from 'rxjs/internal/Observable';
 
-const URL = 'http://localhost:8080/search'
+const URL = '/search'
 
 @Injectable({
   providedIn: 'root'
