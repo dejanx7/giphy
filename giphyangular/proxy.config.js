@@ -1,9 +1,7 @@
-const PROXY_CONFIG = [
-    {
-        context: ['/**'],
-        target: 'http://giphy-production.up.railway.app',
-        secure: false,
-        logLevel: 'debug'
-    }
+module.exports = [
+  {
+    context: [ '/' ],
+    target: 'http://localhost:8080',
+    secure: false
+  }
 ]
-module.exports = PROXY_CONFIG;
