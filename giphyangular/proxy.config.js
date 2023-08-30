@@ -1,7 +1,7 @@
 const PROXY_CONFIG = [
     {
         context: ['/**'],
-        target: 'giphy-production.up.railway.app',
+        target: 'http://giphy-production.up.railway.app',
         secure: false,
         logLevel: 'debug'
     }
