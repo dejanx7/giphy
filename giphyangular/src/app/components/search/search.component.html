@@ -1,9 +1,21 @@
-<form [formGroup]="form" (ngSubmit)="searchGif()">
-    Name:
+<!-- <form [formGroup]="form" (ngSubmit)="searchGif()">
+    Name of GIF:
     <input type="text" formControlName="name">
     <button>search</button>
 </form>
 
 <div *ngFor="let img of image">
     <img src="{{img}}">
+</div> -->
+
+
+<form [formGroup]="form" (ngSubmit)="searchGif()" class="search-form">
+    <label for="gif-name" class="form-label">Search for a GIF here:</label>
+    <input type="text" formControlName="name" id="gif-name" class="form-input">
+    <button type="submit" class="search-button">Search</button>
+</form>
+
+<div *ngFor="let img of image" class="image-container">
+    <img [src]="img" alt="GIF Image" class="gif-image">
 </div>
+
